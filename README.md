@@ -1,34 +1,18 @@
 ## Project Title
 
-GBDA302 Week 4 Example 4: layable Maze (JSON + Level class + Player class)
+GBDA302 Week 4 Example 4: Obsticals and levels
 
 ---
 
 ## Authors
 
-Karen Cochrane and David Han
+Karen Cochrane and David Han and Mia Krzysztalowicz
 
 ---
 
 ## Description
 
-Based on example 3, creates and positions the player using preloads and loadJSON files.
-
----
-
-## Learning Goals
-
-Learning Goals:
-
-- Loads JSON levels (preload)
-- Builds Level objects
-- Creates/positions the Player
-- Handles input + level switching
-
-It is intentionally light on "details" because those are moved into:
-
-- Level.js (grid + drawing + tile meaning)
-- Player.js (position + movement rules)
+find your way through the maze to make it to the end yellow goal, red square obsticalls will be in your way, you must run into them twice and "beat them up" to make your way to the end goal.
 
 ---
 
@@ -41,5 +25,7 @@ N/A
 ## GenAI
 
 The code was written by Dr. Karen Cochrane and David Han but they used GenAI to write the comments.
+
+NO GenAI was used to edit the exsiting code
 
 ---
