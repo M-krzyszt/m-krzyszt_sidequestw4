@@ -41,7 +41,7 @@ class Player {
   }
 
   draw() {
-    // Same "simple high-contrast avatar" idea as your original. 
+    // Same "simple high-contrast avatar" idea as your original.
     fill(20, 120, 255);
     circle(this.pixelX(), this.pixelY(), this.ts * 0.6);
   }
@@ -70,6 +70,16 @@ class Player {
 
     // Prevent walking into walls.
     if (level.isWall(nr, nc)) return false;
+
+    const tile = level.tileAt(nr, nc);
+
+    if (tile === 4) {
+      level.grid[nr][nc] = 5;
+      return false;
+    }
+    if (tile === 5) {
+      level.grid[nr][nc] = 0;
+    }
 
     // Movement is allowed, so commit.
     this.r = nr;
