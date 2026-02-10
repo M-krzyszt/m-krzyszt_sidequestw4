@@ -97,6 +97,9 @@ function keyPressed() {
 function loadLevel(idx) {
   li = idx;
 
+  // --- restarting box ---
+  levels[li] = new Level(copyGrid(levelsData.levels[li]), TS);
+
   const level = levels[li];
 
   // Place player at the level's start tile (2), if present.
